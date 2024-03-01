@@ -1,0 +1,49 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.header_scrolled {
+    background-color: #251902;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {}
+
+.links {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.link_item {}
+
+.link {
+    display: flex;
+
+}
+
+/* HAMBURGUER */
+.burguer_menu{
+    height: 100%;
+    width: 4rem;
+    background-color: red;
+    top: 0;
+    left: 0;
+}
