@@ -1,0 +1,34 @@
+.sidebar_container {
+    padding: 70px 1.5rem 1.5rem 1.5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    width: 40vw;
+    height: 100vh;
+    background-color: #FBB336;
+
+    transition: transform 1.5s;
+}
+
+.sidebar_container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar_container ul li {
+    font-size: 1.5rem;
+    transition: .25s;
+}
+
+.sidebar_container ul li:hover {
+    text-shadow: 4px 4px 6px rgba(66, 68, 90, 0.4);
+    transform: translate(-1px, -1px);
+    transition: .25s;
+
+}
+
+.closed {
+    transform: translateX(100%);
+}

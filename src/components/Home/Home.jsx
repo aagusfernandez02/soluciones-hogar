@@ -35,6 +35,7 @@ const Home = () => {
             <div className={`${styles.home_heading}`}>
                 <h2>Arregla Tuti</h2>
                 <h1>Soluciones a domicilio</h1>
+                <button className='btn btn-outline-warning mt-2'>Contactanos</button>
             </div>
         </>
     )

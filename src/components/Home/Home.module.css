@@ -6,7 +6,6 @@
     
 }
 
-
 .carousel_img{
     height: 100vh;
     object-fit: cover;
@@ -35,4 +34,18 @@
     font-size: 4rem;
     font-weight: 700;
     color: rgb(251, 179, 54);
+}
+
+
+@media (max-width: 650px) {
+    .home_heading h1{
+        top: -.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .home_heading h2{
+        font-size: 3rem;
+        font-weight: 700;
+        color: rgb(251, 179, 54);
+    }
 }
