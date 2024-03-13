@@ -20,10 +20,10 @@ const Navbar = () => {
                     <a href="" className={`${styles.link}`}>Home</a>
                 </li>
                 <li className={`${styles.link_item}`}>
-                    <a href="" className={`${styles.link}`}>Nosotros</a>
+                    <a href="" className={`${styles.link}`}>Servicios</a>
                 </li>
                 <li className={`${styles.link_item}`}>
-                    <a href="" className={`${styles.link}`}>Servicios</a>
+                    <a href="" className={`${styles.link}`}>Nosotros</a>
                 </li>
                 <li className={`${styles.link_item}`}>
                     <a href="" className={`${styles.link}`}>Contacto</a>

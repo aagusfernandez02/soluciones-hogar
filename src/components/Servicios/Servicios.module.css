@@ -1,0 +1,38 @@
+.servicios_container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.servicios_container h2{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.servicios{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media (max-width: 480px){
+    .servicios_container{
+        min-height: auto;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .servicios{
+        gap: 1rem;
+    }
+    
+}

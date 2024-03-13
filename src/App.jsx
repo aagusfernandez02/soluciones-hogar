@@ -1,8 +1,11 @@
-import Home from './components/Home/Home';
 import './App.css';
+import Home from './components/Home/Home';
+import Nosotros from './components/Nosotros/Nosotros';
 import Sidebar from './components/Sidebar/Sidebar';
 import Navbar from './components/Navbar/Navbar';
 import { useEffect, useState } from 'react';
+import Servicios from './components/Servicios/Servicios';
+import ContactSection from './components/ContactSection/ContactSection';
 
 function App() {
 
@@ -32,45 +35,9 @@ function App() {
       {showSidebar ? <Sidebar /> : <Navbar />}
       <body>  
         <Home />
-        <h1>Hello world</h1>
-        <button className='btn btn-primary'>TEST</button>
-        <ul>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-        </ul>
+        <Servicios />
+        <Nosotros />
+        <ContactSection />
       </body>
     </>
   )

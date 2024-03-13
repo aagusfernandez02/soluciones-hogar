@@ -1,0 +1,37 @@
+.nosotros_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #FBB336;
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 7rem;
+}
+
+.nosotros_container h2{
+    margin-bottom: 4rem;
+}
+
+.nosotros_container p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.nosotros_container strong{
+    font-size: 1.3rem;
+}
+
+@media (max-width: 680px){
+    .nosotros_container h2{
+        margin-bottom: 1.5rem;
+    }
+    .nosotros_container p{
+        font-size: 1rem;
+    }
+    
+    .nosotros_container strong{
+        font-size: 1.1rem;
+    }
+}
