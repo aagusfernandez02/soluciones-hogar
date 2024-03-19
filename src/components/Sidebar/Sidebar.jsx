@@ -12,16 +12,16 @@ const Sidebar = () => {
       <div className={`${styles.sidebar_container} ${!isMenuClicked && styles.closed}`}>
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="">Nosotros</a>
+            <a href="#servicios">Nosotros</a>
           </li>
           <li>
-            <a href="">Servicios</a>
+            <a href="#nosotros">Servicios</a>
           </li>
           <li>
-            <a href="">Contacto</a>
+            <a href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>

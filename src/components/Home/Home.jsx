@@ -4,7 +4,7 @@ import styles from './Home.module.css';
 const Home = () => {
     return (
         <>
-            <div className={`${styles.carousel_container}`}>
+            <div className={`${styles.carousel_container}`} id='home'>
                 <div id="carouselHome" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -13,7 +13,7 @@ const Home = () => {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active" data-bs-interval="10000">
-                            <img src="https://hidrodestapes.cl/wp-content/uploads/2021/10/reparaciones-del-hogar.jpg" className={`${styles.carousel_img} d-block w-100`} alt="foto presentacion 1" />
+                            <img src="https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/2ea69a32-46cd-430b-b8da-e3f6850afee0?rule=hw396_70" className={`${styles.carousel_img} d-block w-100`} alt="foto presentacion 1" />
                         </div>
                         <div className="carousel-item" data-bs-interval="10000">
                             <img src="https://geeksroom.com/wp-content/uploads/2019/07/carpintero-pixabay.jpg" className={`${styles.carousel_img} d-block w-100`} alt="foto presentacion 2" />
@@ -33,9 +33,9 @@ const Home = () => {
                 </div>
             </div>
             <div className={`${styles.home_heading}`}>
-                <h2>Arregla Tuti</h2>
+                <h2>Soluciones Oeste</h2>
                 <h1>Soluciones a domicilio</h1>
-                <button className='btn btn-outline-warning mt-2'>Contactanos</button>
+                <a className='btn btn-outline-warning mt-2' href='#contacto'>Contactanos</a>
             </div>
         </>
     )

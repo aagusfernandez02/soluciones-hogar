@@ -4,7 +4,7 @@ import Card_servicio from '../Card_servicio/Card_servicio';
 
 const Servicios = () => {
   return (
-    <div className={styles.servicios_container}>
+    <div className={styles.servicios_container} id='servicios'>
       <h2>Servicios</h2>
       <div className={styles.servicios}>
         <Card_servicio title="Mantenimiento general en domicilios"><i className="bi bi-house"></i></Card_servicio>

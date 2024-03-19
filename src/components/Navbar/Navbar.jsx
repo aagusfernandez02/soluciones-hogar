@@ -14,19 +14,22 @@ const Navbar = () => {
 
     return (
         <nav className={`${styles.header} ${isScrolled && styles.header_scrolled}`}>
-            <p className={`${styles.logo}`}>ArreglaTuti</p>
+            <a href='#home'>
+                <img src="assets/images/logo.png" alt="Logo soluciones oeste" />
+                <p className={`${styles.logo}`}>Soluciones Oeste</p>
+            </a>
             <ul className={`${styles.links}`}>
                 <li className={`${styles.link_item}`}>
-                    <a href="" className={`${styles.link}`}>Home</a>
+                    <a href="#home" className={`${styles.link}`}>Home</a>
                 </li>
                 <li className={`${styles.link_item}`}>
-                    <a href="" className={`${styles.link}`}>Servicios</a>
+                    <a href="#servicios" className={`${styles.link}`}>Servicios</a>
                 </li>
                 <li className={`${styles.link_item}`}>
-                    <a href="" className={`${styles.link}`}>Nosotros</a>
+                    <a href="#nosotros" className={`${styles.link}`}>Nosotros</a>
                 </li>
                 <li className={`${styles.link_item}`}>
-                    <a href="" className={`${styles.link}`}>Contacto</a>
+                    <a href="#contacto" className={`${styles.link}`}>Contacto</a>
                 </li>
             </ul>
         </nav>

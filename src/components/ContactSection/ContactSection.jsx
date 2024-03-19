@@ -7,11 +7,11 @@ const ContactForm = () => {
 
 
   return (
-    <div className={styles.contact_section}>
+    <div className={styles.contact_section} id='contacto'>
       <h2>Contacto</h2>
       <p>Si queres ponerte en contacto con nosotros, ya sea por <strong>consultas</strong>, o para que te armemos un <strong>presupuesto</strong> no dudes en ponerte en contacto con nosotros.</p>
       <a className={`btn btn-success ${styles.contact_button}`} href={link_whatsapp} target='_blank'>
-        <i class="bi bi-whatsapp"></i> Contactanos
+        <i className="bi bi-whatsapp"></i> Contactanos
       </a>
     </div>
   )
