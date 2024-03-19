@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <nav className={`${styles.header} ${isScrolled && styles.header_scrolled}`}>
             <a href='#home'>
-                <img src="public/assets/images/logo.png" alt="Logo soluciones oeste" />
+                <img src="/assets/images/logo.png" alt="Logo soluciones oeste" />
                 <p className={`${styles.logo}`}>Soluciones Oeste</p>
             </a>
             <ul className={`${styles.links}`}>
