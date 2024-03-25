@@ -1,0 +1,122 @@
+.modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 85vh;
+    z-index: 1000;
+    background-color: #FBB336;
+    border-radius: 5px;
+    box-shadow: 1px 15px 18px -1px rgba(0, 0, 0, 0.49);
+    -webkit-box-shadow: 1px 15px 18px -1px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 1px 15px 18px -1px rgba(0, 0, 0, 0.49);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close_btn{
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 10px;
+}
+
+.modal h2{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.modal p{
+    font-size: .8rem;
+    text-align: center;
+}
+
+.gallery{
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: .5rem;
+    column-gap: .3rem;
+}
+
+.gallery img{
+    width: 40%;
+    height: 50%;
+    object-fit: cover;
+    text-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .modal {
+        width: 95vw;
+        height: 60vh;
+    }
+    .modal h2{
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    
+    .modal p{
+        font-size: .85rem;
+    }
+    .gallery{
+        padding: 0;
+        gap: 1%;
+    }
+    
+    .gallery img{
+        width: 49%;
+        height: 50%;
+        object-fit: cover;
+        text-wrap: wrap;
+    }
+}
+
+@media (max-width: 400px) {
+    .modal {
+        width: 95vw;
+        height: 60vh;
+    }
+    .modal h2{
+        font-size: .8rem;
+        margin-bottom: .2rem;
+    }
+    
+    .modal p{
+        font-size: .65rem;
+    }
+    .gallery{
+        padding: 0;
+        gap: 1%;
+    }
+    
+    .gallery img{
+        width: 49%;
+        height: 50%;
+        object-fit: cover;
+        text-wrap: wrap;
+    }
+}
+
+

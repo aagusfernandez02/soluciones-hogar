@@ -32,8 +32,8 @@ function App() {
 
   return (
     <> 
-      {showSidebar ? <Sidebar /> : <Navbar />}
       <body>  
+        {showSidebar ? <Sidebar /> : <Navbar />}
         <Home />
         <Servicios />
         <Nosotros />

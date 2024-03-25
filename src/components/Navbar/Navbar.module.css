@@ -12,6 +12,7 @@ p{
     position: fixed;
     width: 100%;
     transition: all 0.5s;
+    z-index: 3;
 }
 
 .header_scrolled {
