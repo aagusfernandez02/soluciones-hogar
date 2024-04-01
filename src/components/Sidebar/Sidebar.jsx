@@ -8,7 +8,6 @@ const Sidebar = () => {
   return (
     <>
       <HamburguerMenu isMenuClicked={isMenuClicked} setIsMenuClicked={setIsMenuClicked} />
-      {/* <div className={`${styles.sidebar_container} ${styles.closed}`}>Sidebar</div> */}
       <div className={`${styles.sidebar_container} ${!isMenuClicked && styles.closed}`}>
         <ul>
           <li>

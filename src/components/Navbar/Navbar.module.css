@@ -92,12 +92,3 @@ ul {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-/* HAMBURGUER */
-.burguer_menu{
-    height: 100%;
-    width: 4rem;
-    background-color: red;
-    top: 0;
-    left: 0;
-}

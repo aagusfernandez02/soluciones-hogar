@@ -13,7 +13,7 @@
     align-items: center;
     transition: 1.5s;
     transform: translateX(0vw);
-    z-index: 999;
+    z-index: 1000;
 
 }
 
