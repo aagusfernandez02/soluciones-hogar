@@ -11,6 +11,7 @@ function App() {
 
   const [showSidebar, setShowSidebar] = useState(true);
 
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 670) {

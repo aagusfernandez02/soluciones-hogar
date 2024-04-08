@@ -2,13 +2,18 @@ import React, { useState } from 'react';
 import styles from './Servicios.module.css';
 import Card_servicio from '../Card_servicio/Card_servicio';
 import Modal from '../Modal/Modal';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Servicios = () => {
   const [isModalOpened, setIsModalOpened] = useState(false);
-
+  
   const [images, setImages] = useState([]);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+
+  const notify = ()=> toast.warn("Ups! Este área se encuentra en mantenimiento", {theme:'dark', autoClose: 1000})
 
   const data_mantenimientoEmpresas = {
     images: [{ src: '/assets/images/trabajos/mantenimiento_empresas/escaleras_1.jpg', alt: 'imagen escalera 1' }, { src: '/assets/images/trabajos/mantenimiento_empresas/escaleras_2.jpg', alt: 'imagen escalera 2' }, { src: '/assets/images/trabajos/mantenimiento_empresas/rack_1.jpg', alt: 'imagen rack 1' }, { src: '/assets/images/trabajos/mantenimiento_empresas/rack_2.jpg', alt: 'imagen rack 2' }],
@@ -29,14 +34,15 @@ const Servicios = () => {
       <h2>Servicios</h2>
       <p>Clickea en cada servicio si deseas ver mas informacion e imagenes de trabajos ya realizados</p>
       <div className={styles.servicios}>
-        <a onClick={() => handleClick_modal(data_mantenimientoEmpresas)}><Card_servicio title="Mantenimiento general en domicilios"><i className="bi bi-house"></i></Card_servicio></a>
+        <a onClick={notify}><Card_servicio title="Mantenimiento general en domicilios"><i className="bi bi-house"></i></Card_servicio></a>
         <a onClick={() => handleClick_modal(data_mantenimientoEmpresas)}><Card_servicio title="Mantenimiento general para empresas" onClick={() => console.log("HOLA")}><i className="bi bi-briefcase"></i></Card_servicio></a>
-        <a onClick={() => handleClick_modal(data_mantenimientoEmpresas)}><Card_servicio title="Colocación de artefactos eléctricos"><i className="bi bi-plug"></i></Card_servicio></a>
-        <a onClick={() => handleClick_modal(data_mantenimientoEmpresas)}><Card_servicio title="Trabajos de herreria"><i className="bi bi-hammer"></i></Card_servicio></a>
-        <a onClick={() => handleClick_modal(data_mantenimientoEmpresas)}><Card_servicio title="Instalación y reparacion de aires acondicionados"><i className="bi bi-snow"></i></Card_servicio></a>
+        <a onClick={notify}><Card_servicio title="Colocación de artefactos eléctricos"><i className="bi bi-plug"></i></Card_servicio></a>
+        <a onClick={notify}><Card_servicio title="Trabajos de herreria"><i className="bi bi-hammer"></i></Card_servicio></a>
+        <a onClick={notify}><Card_servicio title="Instalación y reparacion de aires acondicionados"><i className="bi bi-snow"></i></Card_servicio></a>
         {/* <button className='btn btn-primary' onClick={()=>setIsModalOpened(true)}>OPEN MODAL</button> */}
         {isModalOpened && <Modal setIsModalOpened={setIsModalOpened} images={images} title={title} description={description} />}
       </div>
+      <ToastContainer />
     </div >
   )
 }
